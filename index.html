@@ -1,5 +1,10 @@
 <html>
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="main.css"></link>
   <script src="imported/jquery-3.2.1.min.js"></script>
   <script src="imported/math.js"></script>
   <script src="lib/nnjs.js"></script>
@@ -9,15 +14,22 @@
   <script src="lib/nnjs_functions.js"></script>
   <script src="lib/graph_xy.js"></script>
   <script src="lib/runner.js"></script>
-  <script src="lib/main.js"></script>
+  <script src="main.js"></script>
 </head>
 <body>
-  <div>
-    <span id="play_pause">Play</span>
-  </div>
-  <div>
-    <canvas id="canvas0"></canvas>
-    <svg id="svg0" style="border: solid #bbb 1px"></svg>
+  <div id="container" class="container">
+    <div class="controls">
+      <span id="play">
+        <span class="fa fa-play-circle"></span>
+      </span>
+      <span id="pause">
+        <span class="fa fa-pause-circle"></span>
+      </span>
+    </div>
+    <div>
+      <!-- <canvas id="canvas0"></canvas> -->
+      <svg id="svg0" style="border: solid #bbb 1px"></svg>
+    </div>
   </div>
 </body>
 </html>

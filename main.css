@@ -1,0 +1,15 @@
+#play {
+
+}
+
+#pause {
+  display: none;
+}
+
+div.controls {
+  margin: 10px 0px 5px 0px;
+}
+
+.controls svg {
+  font-size: 2em;
+}
