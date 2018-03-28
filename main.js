@@ -2,7 +2,7 @@ var runner;
 
 $(document).ready(function(){
   var network = new nnjs.Network([2,4,1]);
-  var svg = $("#svg0")[0];
+  var svg = $("#netsvg")[0];
   runner = new nnjs.Runner(network, svg);
 })
 
