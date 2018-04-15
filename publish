@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+
+if [ -z "$1" ]; then
+  echo "Must provide destination location" >&2
+  exit 1
+else
+  echo "Publishing to $1" >&2
+fi
+
+cp -r index.html main.css main.js imported lib $1
