@@ -8,8 +8,23 @@
   height: 400px;
 }
 
-.keymap {
+#output_canvas {
+  width: 200px;
+  height: 200px;
+}
+
+.bordered-graph {
+  border: solid #bbb 1px;
+}
+
+#colorbar.vertical {
+  display: inline-block;
   height: 100%;
+  width: 20px;
+}
+
+#colorbar.horizontal {
+  width: 100%;
 }
 
 #play {
