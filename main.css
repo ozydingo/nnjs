@@ -25,6 +25,11 @@ h3 {
   height: 200px;
 }
 
+#select_canvas {
+  width: 200px;
+  height: 200px;
+}
+
 .bordered-graph {
   border: solid #bbb 1px;
 }
