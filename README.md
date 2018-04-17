@@ -10,3 +10,5 @@ On the bucket list:
  - User-inputtable data
  - Model validation, at least as far as a training & test set
  - Selectable layers & neurons, plot selected neuron's output on a separate graph
+ - Activation function selection and visualization
+ - Prepared demos of problematic scenarios: learning slowdown, RELU death, etc.
