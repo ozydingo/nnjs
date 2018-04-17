@@ -17,6 +17,7 @@
   <script src="lib/runner.js"></script>
   <script src="lib/neuron_mapper.js"></script>
   <script src="lib/network_mapper.js"></script>
+  <script src="lib/network_hacker.js"></script>
   <script src="main.js"></script>
 </head>
 <body>
@@ -41,11 +42,22 @@
     <div class="d-flex flex-row">
       <div class="p-2">
         <div class="controls">
-          <span id="play">
-            <span class="fa fa-play-circle"></span>
+          <span id="play-ctrl" class="ctrl-group">
+            <span id="play">
+              <span class="fa fa-play-circle"></span>
+            </span>
+            <span id="pause">
+              <span class="fa fa-pause-circle"></span>
+            </span>
           </span>
-          <span id="pause">
-            <span class="fa fa-pause-circle"></span>
+          <span id="layers-ctrl" class="ctrl-group">
+            <span id="dec-layers">
+              <span class="fa fa-minus-circle"></span>
+            </span>
+            # hidden layers
+            <span id="inc-layers">
+              <span class="fa fa-plus-circle"></span>
+            </span>
           </span>
         </div>
       </div>

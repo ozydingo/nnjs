@@ -56,8 +56,12 @@ div.controls {
   margin: 10px 0px 5px 0px;
 }
 
-.controls svg {
+#play, #pause{
   font-size: 2em;
+}
+
+.ctrl-group {
+  margin: 0em 1em 0em 1em;
 }
 
 * {
