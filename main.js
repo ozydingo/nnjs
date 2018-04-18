@@ -33,3 +33,21 @@ $(document).on("click", "#inc-layers", function() {
   hacker.add_layer(3);
   runner.paint();
 });
+
+$(document).on("click", "#dec-neurons", function() {
+  var layer = runner.painter.selected_layer;
+  if(layer === null) {return;}
+
+  var hacker = new nnjs.NetworkHacker(runner.network);
+  hacker.remove_neuron(layer);
+  runner.paint();
+});
+
+$(document).on("click", "#inc-neurons", function() {
+  var layer = runner.painter.selected_layer;
+  if(layer === null) {return;}
+
+  var hacker = new nnjs.NetworkHacker(runner.network);
+  hacker.add_neuron(layer);
+  runner.paint();
+});
