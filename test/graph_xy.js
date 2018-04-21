@@ -14,6 +14,10 @@ $(document).ready(function() {
   graphs.matrix.matrix(x, y, z);
 
   graphs.scatter = new nnjs.GraphXY($("#scatter")[0]);
+  graphs.scatter.xlim(0,1);
+  graphs.scatter.ylim(0,1);
+  graphs.scatter.scatter(generate_scatter_data(0.2, 0.4, 0.2, 0.4), 'x', 'rgb(200,0,0)',30)
+  graphs.scatter.scatter(generate_scatter_data(0.5, 0.4, 0.7, 0.9), 'o', 'rgb(0,0,200)',30)
 });
 
 generate_path_data = function() {
@@ -46,4 +50,15 @@ generate_matrix_data = function() {
       [0,1,2,3,4,5],
     ],
   };
+}
+
+generate_scatter_data = function(mx, sx, my, sy) {
+  var data = new Array(20);
+  for (var ii = 0; ii<data.length; ii++) {
+    data[ii] = [
+      mx + sx * (Math.random() - 0.5),
+      my + sy * (Math.random() - 0.5)
+    ];
+  }
+  return data;
 }
