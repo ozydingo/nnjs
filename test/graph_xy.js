@@ -13,11 +13,17 @@ $(document).ready(function() {
   var {x, y, z} = generate_matrix_data();
   graphs.matrix.matrix(x, y, z);
 
-  graphs.scatter = new nnjs.GraphXY($("#scatter")[0]);
+  graphs.scatter = new nnjs.GraphXY($("#scatter-text")[0]);
   graphs.scatter.xlim(0,1);
   graphs.scatter.ylim(0,1);
   graphs.scatter.scatter(generate_scatter_data(0.2, 0.4, 0.2, 0.4), 'x', 'rgb(200,0,0)',30)
   graphs.scatter.scatter(generate_scatter_data(0.5, 0.4, 0.7, 0.9), 'o', 'rgb(0,0,200)',30)
+
+  graphs.scatter = new nnjs.GraphXY($("#scatter-symbol")[0]);
+  graphs.scatter.xlim(0,1);
+  graphs.scatter.ylim(0,1);
+  graphs.scatter.scatter(generate_scatter_data(0.2, 0.4, 0.2, 0.4), ':dot', 'rgb(200,0,0)',4)
+  graphs.scatter.scatter(generate_scatter_data(0.5, 0.4, 0.7, 0.9), ':dot', 'rgb(0,0,200)',4)
 });
 
 generate_path_data = function() {
