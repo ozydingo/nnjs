@@ -22,8 +22,8 @@ $(document).ready(function() {
   graphs.scatter = new nnjs.GraphXY($("#scatter-symbol")[0]);
   graphs.scatter.xlim(0,1);
   graphs.scatter.ylim(0,1);
-  graphs.scatter.scatter(generate_scatter_data(0.2, 0.4, 0.2, 0.4), ':dot', 'rgb(200,0,0)',4)
-  graphs.scatter.scatter(generate_scatter_data(0.5, 0.4, 0.7, 0.9), ':dot', 'rgb(0,0,200)',4)
+  graphs.scatter.scatter(generate_scatter_data(0.2, 0.4, 0.2, 0.4), ':dot', -1, 4)
+  graphs.scatter.scatter(generate_scatter_data(0.5, 0.4, 0.7, 0.9), ':dot', 1, 4)
 });
 
 generate_path_data = function() {
