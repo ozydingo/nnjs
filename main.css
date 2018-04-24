@@ -74,6 +74,10 @@ div.controls {
   margin: 0em 1em 0em 1em;
 }
 
+#output_canvas{
+  cursor: crosshair;
+}
+
 * {
   font-size: 14px;
 }

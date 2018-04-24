@@ -9,7 +9,6 @@ If you're poking around, start with [`lib/neuron.js`](https://github.com/ozyding
 
 On the bucket list:
  - Training and validation data plotted on output graph
- - User-inputtable data
  - Model validation, at least as far as a training & test set
  - Activation function selection and visualization
  - Prepared demos of problematic scenarios: learning slowdown, RELU death, etc.
