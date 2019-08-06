@@ -1,7 +1,7 @@
 # nnjs
 <em>A neural net demo for Javascript</em>
 
-![Main page screenshot](assets/images/screenshots/nnjs_screenshot_2018-04-23.png)
+![Main page screenshot](assets/images/screenshots/nnjs_screenshot_2019-08-06.png)
 
 ## What is it?
 
