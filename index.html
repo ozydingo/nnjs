@@ -7,7 +7,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="imported/normalize.css"></link>
@@ -19,7 +19,7 @@
   <div class="app">
     <div class="header">
       <div class = "content">
-        <h1 class="emphasis">nnjs</h1>
+        <h1>nnjs</h1>
         <div>
           An interactive neural net demo written in vanilla javascript meant to foster intuitive understanding of neural net training.
         </div>
@@ -29,12 +29,17 @@
     <div class="content">
       <div class="intro">
         <div>
-          Short for "<b>n</b>eural <b>n</b>ets in <b>j</b>ava<b>s</b>cript" and pronounced "ninjas", because duh!
+          Short for "<span class="acronym">n</span>eural <span class="acronym">n</span>ets in <span class="acronym">j</span>ava<span class="acronym">s</span>cript" and pronounced "ninjas", because duh!
         </div>
         <div class="instruction emphasis">
-          <p>Hit the "play" button (<span class="fa fa-play-circle"></span>) below to get started!</p>
+          Hit the "play" button (<span class="fa fa-play-circle"></span>) below to get started!
         </div>
-        <p>Add data by clicking or right-clicking on the output (bottom-right) graph.</p>
+        <div>
+          Add data by clicking or right-clicking on the output (bottom-right) graph.
+        </div>
+        <div>
+          Select a neuron in the graph to plot its output in the top-right graph.
+        </div>
       </div>
       <div class="actionbar">
         <span id="play-ctrl" class="ctrl-group">

@@ -4,6 +4,7 @@
 }
 
 h1 {
+  color: black;
   font-size: 26px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -158,6 +159,12 @@ ul {
 .emphasis {
   color: #000;
   font-weight: bold;
+}
+
+.acronym {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .footpad {
