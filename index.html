@@ -93,11 +93,19 @@
         </div>
         <div id="netsvg" class="graph bordered-graph"></div>
         <div class="output-graphs">
-          <div>
-            <div id="select_canvas" class="output-container graph bordered-graph" data-toggle="tooltip" data-placement="left" title="Select a neuron to see its output on this graph!"></div>
+          <div class="graph-group">
+            <div class="graph-label">
+              Selected neuron
+            </div>
+            <div id="select_canvas" class="output-container graph bordered-graph" data-toggle="tooltip" data-placement="left" title="Select a neuron to see its output on this graph!">
+            </div>
           </div>
-          <div>
-            <div id="output_canvas" class="output-container graph bordered-graph" data-toggle="tooltip" data-placement="left" title="Click or right-click to add training data"></div>
+          <div class="graph-group">
+            <div class="graph-label">
+              Network output
+            </div>
+            <div id="output_canvas" class="output-container graph bordered-graph" data-toggle="tooltip" data-placement="left" title="Click or right-click to add training data">
+            </div>
           </div>
         </div>
       </div>

@@ -57,6 +57,7 @@ div {
 .output-graphs {
   display: flex;
   flex-direction: column;
+  height: 400px;
 }
 
 #netsvg {
@@ -72,16 +73,33 @@ div {
 
 .output-container {
   width: 200px;
-  height: 200px;
-}
-
-.output-container canvas {
-  width: 100%;
-  height: 100%;
+  flex: 1;
+  display: flex;
 }
 
 .bordered-graph {
   border: solid #bbb 1px;
+}
+
+.graph-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.graph-label {
+  display: none;
+  width: 200px;
+  position: absolute;
+  background: #00000077;
+  color: #ffffffcc;
+  float: left;
+  height: 1.2em;
+}
+
+.graph-group:hover > .graph-label {
+  display: block;
 }
 
 #colorbar.vertical {
